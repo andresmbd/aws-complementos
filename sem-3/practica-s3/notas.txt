@@ -1,0 +1,2 @@
+Este es un archivo de notas
+Esta es la segunda linea del archivo notas
