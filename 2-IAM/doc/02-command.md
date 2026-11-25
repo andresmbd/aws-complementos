@@ -14,7 +14,7 @@ aws sts get-caller-identity
 aws configure get region
 ```
 
-Los comandos de configuración de la CLI están en [`01-CONFIGURACION`](../01-CONFIGURACION/02-command.md).
+Los comandos de configuración de la CLI están en [`1-CONFIGURACION`](../../1-CONFIGURACION/doc/02-command.md).
 
 ## 2. Usuarios
 
