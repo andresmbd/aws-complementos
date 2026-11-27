@@ -7,7 +7,7 @@ Lanzar una instancia EC2 con un servidor web, protegerla con un security group y
 ## Antes de empezar
 
 - AWS CLI v2 configurada con tu usuario administrador.
-- Haber terminado la actividad de [`04-ROLES`](../04-ROLES/03-activity.md). Deben existir tu bucket con `reporte.txt`, el rol `ec2-lector-s3` y el perfil de instancia `ec2-lector-s3`.
+- Haber terminado la actividad de [`04-ROLES`](../../4-ROLES/doc/03-activity.md). Deben existir tu bucket con `reporte.txt`, el rol `ec2-lector-s3` y el perfil de instancia `ec2-lector-s3`.
 - Ten abiertos `01-info.md` y `02-command.md`: ahí están los comandos que necesitas.
 - Crea una carpeta de trabajo llamada `practica-ec2` y entra en ella. Todos los comandos se corren desde ahí.
 
@@ -38,7 +38,7 @@ Lanzar una instancia EC2 con un servidor web, protegerla con un security group y
 11. Permite el puerto 22 **solo desde tu IP**.
 12. Muestra las reglas del security group.
 
-**Resultado esperado:** dos reglas: el 80 para `0.0.0.0/0` y el 22 para tu IP con `/32`.
+**Resultado esperado:** dos reglas: el 80 para `0.0.0.0/0` y el 22 para tu IP con `/32`. /
 
 ## Parte 4: Lanzar la instancia
 

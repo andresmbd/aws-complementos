@@ -158,6 +158,7 @@ IAM no deja borrar un rol que todavía está en uso.
 ```bash
 # 1. Sacar el rol del perfil y borrar el perfil
 aws iam remove-role-from-instance-profile --instance-profile-name <perfil> --role-name <rol>
+
 aws iam delete-instance-profile --instance-profile-name <perfil>
 
 # 2. Borrar las políticas en línea y quitar las administradas

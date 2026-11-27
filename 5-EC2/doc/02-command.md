@@ -92,6 +92,13 @@ Se ejecuta una sola vez, cuando la instancia arranca por primera vez.
 ```bash
 aws ec2 run-instances --image-id <ami-id> --instance-type t3.micro --key-name <clave> --security-group-ids <sg-id> --iam-instance-profile Name=<perfil> --user-data file://inicio.sh --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=<nombre-instancia>}]" --query "Instances[0].InstanceId" --output text
 ```
+> Tags=[{Key=Name,Value=<nombre-instancia>}], Name es la clave (key) y <nombre-instancia> es el valor (value) de una etiqueta (tag) que le pones a la instancia para reconocerla fácilmente en la consola o en filtros del CLI.
+
+### En caso de no tener la etiqueta 
+
+```bash
+aws ec2 create-tags --resources i-0fb4bb15b9ab162a9 --tags Key=Name,Value=web-andres-ec2
+``` 
 
 | Opción | Qué define |
 |---|---|
